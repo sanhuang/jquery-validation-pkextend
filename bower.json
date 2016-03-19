@@ -3,7 +3,7 @@
 	"homepage": "http://personalwork.tw/",
 	"repository": {
 		"type": "git",
-		"url": "git@github.com:sanhuang/jquery-validation-pkextend.git"
+		"url": "https://github.com/sanhuang/jquery-validation-pkextend"
 	},
 	"authors": [
 		"San Huang <san@mail.personalwork.tw>"
