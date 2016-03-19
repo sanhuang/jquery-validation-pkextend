@@ -1,0 +1,2 @@
+# jquery-validation-extend
+擴充jquery-validation套件的欄位檢查項目以及預先中文化處理，同時針對要驗證表單配置className規則可於專案初始化後快速套用。
