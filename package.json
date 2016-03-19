@@ -1,21 +1,21 @@
 {
-	"name": "jquery-validation",
-	"title": "jQuery Validation Plugin",
-	"description": "Client-side form validation made easy",
-	"version": "1.15.0",
-	"homepage": "http://jqueryvalidation.org/",
+	"name": "jquery-validation-pkextend",
+	"title": "jQuery Validation Plugin extendion from personalwork",
+	"description": "Extended jquery-validation form validation functions and initialize by the special way",
+	"version": "1.0.0",
+	"homepage": "http://personalwork.tw/",
 	"license": "MIT",
 	"author": {
-		"name": "Jörn Zaefferer",
-		"email": "joern.zaefferer@gmail.com",
-		"url": "http://bassistance.de"
+		"name": "San Huang",
+		"email": "san@mail.personalwork.tw",
+		"url": "http://personalwork.tw/"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/jzaefferer/jquery-validation.git"
+		"url": "https://github.com/sanhuang/jquery-validation-pkextend"
 	},
 	"bugs": {
-		"url": "https://github.com/jzaefferer/jquery-validation/issues"
+		"url": "https://github.com/sanhuang/jquery-validation-pkextend/issues"
 	},
 	"licenses": [
 		{
@@ -23,29 +23,12 @@
 			"url": "http://www.opensource.org/licenses/MIT"
 		}
 	],
-	"scripts": {
-		"test": "grunt",
-		"prepublish": "grunt"
-	},
 	"files": [
-		"dist/localization/",
-		"dist/additional-methods.js",
-		"dist/jquery.validate.js"
+		"validate-extend.js"
 	],
-	"main": "dist/jquery.validate.js",
+	"main": "validate-extend.js",
 	"dependencies": {},
 	"devDependencies": {
-		"commitplease": "^2.2.3",
-		"grunt": "^0.4.4",
-		"grunt-contrib-compress": "^0.7",
-		"grunt-contrib-concat": "^0.3",
-		"grunt-contrib-copy": "^0.5",
-		"grunt-contrib-jshint": "^0.11.3",
-		"grunt-contrib-qunit": "^0.4",
-		"grunt-contrib-uglify": "^0.4",
-		"grunt-contrib-watch": "^0.6",
-		"grunt-jscs": "^2.2",
-		"grunt-text-replace": "^0.3.11"
 	},
 	"keywords": [
 		"jquery",
