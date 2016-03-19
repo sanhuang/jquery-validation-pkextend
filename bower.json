@@ -1,9 +1,9 @@
 {
-	"name": "jquery-validation-extend",
+	"name": "jquery-validation-pkextend",
 	"homepage": "http://personalwork.tw/",
 	"repository": {
 		"type": "git",
-		"url": "git@github.com:sanhuang/jquery-validation-extend.git"
+		"url": "git@github.com:sanhuang/jquery-validation-pkextend.git"
 	},
 	"authors": [
 		"San Huang <san@mail.personalwork.tw>"
