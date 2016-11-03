@@ -77,14 +77,4 @@ $(function(){
 	if( $(".valid-confirmpw").length ){
 		$(".valid-confirmpw").rules("add", { equalTo: "#password" });
 	}
-
-	/**
-	 * 配置日期選擇器
-	 */
-	if( $(".datepicker").length ){
-		$('.datepicker').datepicker({
-            language : 'zh-TW',
-            startDate : moment(new Date()).format('YYYY-MM-DD')
-        });
-	}
 });
