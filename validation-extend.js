@@ -7,18 +7,18 @@ jQuery.extend(jQuery.validator.messages, {
     email: "請輸入正確電子郵件.",
     url: "請輸入網址",
     date: "請輸入日期格式",
-    dateISO: "Please enter a valid date (ISO).",
+    dateISO: "請輸入有效的日期 (YYYY-MM-DD)",
     number: " 此欄位只能填寫數字/小數點與負號.",
     digits: "此欄位只能填寫數字",
-    creditcard: "Please enter a valid credit card number.",
+    creditcard: "請輸入有效的信用卡號碼",
     equalTo: "資料比對不符，請重新修改.",
     accept: "Please enter a value with a valid extension.",
-    maxlength: jQuery.validator.format("Please enter no more than {0} characters."),
-    minlength: jQuery.validator.format("Please enter at least {0} characters."),
-    rangelength: jQuery.validator.format("Please enter a value between {0} and {1} characters long."),
-    range: jQuery.validator.format("Please enter a value between {0} and {1}."),
-    max: jQuery.validator.format("Please enter a value less than or equal to {0}."),
-    min: jQuery.validator.format("Please enter a value greater than or equal to {0}.")
+    maxlength: $.validator.format( "最多 {0} 個字" ),
+    minlength: $.validator.format( "最少 {0} 個字" ),
+    rangelength: $.validator.format( "請輸入長度為 {0} 至 {1} 之間的字串" ),
+    range: $.validator.format( "請輸入 {0} 至 {1} 之間的數值" ),
+    max: $.validator.format( "請輸入不大於 {0} 的數值" ),
+    min: $.validator.format( "請輸入不小於 {0} 的數值" )
 });
 
 /**

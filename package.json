@@ -24,9 +24,9 @@
 		}
 	],
 	"files": [
-		"validate-extend.js"
+		"validation-extend.js"
 	],
-	"main": "validate-extend.js",
+	"main": "validation-extend.js",
 	"dependencies": {},
 	"devDependencies": {
 	},
