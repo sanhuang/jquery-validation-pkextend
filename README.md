@@ -2,9 +2,14 @@
 擴充jquery-validation套件的欄位檢查項目以及預先中文化處理，同時針對要驗證表單配置className規則可於專案初始化後快速套用。
 
 ## Cahge log
+v1.0.5
+    - 新增獨立樣式，配置提示錯誤區塊樣式語法。
+    - 調整判斷啟用jquery-validation偵測.form-validation樣式名稱。
+
 v1.0.4
     - 修正validation-extend.js檔名錯誤。
     - 合併預設中文語系到validation-extend.js內。
+
 v1.0.2
     - 排除非驗證機制程式碼。
     - 附加繁體中文語系處理。

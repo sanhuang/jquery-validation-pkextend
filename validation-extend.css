@@ -1,0 +1,22 @@
+/**
+ * 配置預設使用jquery-validation套件顯示驗證錯誤提示訊息區塊樣式
+ * 1. 偵測錯誤區塊父元素「div」改成position:relative;讓區塊置於欄位上方。
+ * */
+
+/* 改用類似tooltips形式呈現 */
+div:has(p.validation-fail) {
+    position: relative;
+}
+    p.validation-fail{
+        position: absolute;
+        background-color: #D9534F;
+        color: #FFFFFF;
+        top: 0;
+        border-bottom-color: #000000; /* black */
+        border-width: 0 5px 5px;
+        padding: 3px;
+    }
+/**
+ *  表單驗證樣式
+ */
+.valid-required{ border: 1px solid #B15D54; }

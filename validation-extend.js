@@ -41,12 +41,12 @@ $.validator.addMethod("require_from_group", function(value, element, options){
 }, $.validator.format("至少要有一個品項有數量！"));
 
 $(function(){
-	$('.form-horizontal, .form').each(function() {
+	$('.form-validation').each(function() {
         $(this).validate({
-    		errorClass : 'valid-block',
-    	    errorElement : 'p',
-    	    focusCleanup : true,
-    	});
+            errorClass : 'validation-fail',
+            errorElement : 'p',
+            focusCleanup : true,
+        });
     });
 
     // form 至少必須填立一項欄位才可送出！
