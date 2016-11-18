@@ -2,7 +2,7 @@
  * 專門處理表單類元件互動效果函式
  */
 jQuery.extend(jQuery.validator.messages, {
-    required: "此欄位必填.",
+    required: "此欄位必須填寫.",
     remote: "輸入值檢查錯誤，請重新輸入.",
     email: "請輸入正確電子郵件.",
     url: "請輸入網址",
@@ -41,7 +41,7 @@ $.validator.addMethod("require_from_group", function(value, element, options){
 }, $.validator.format("至少要有一個品項有數量！"));
 
 $(function(){
-	$('.form-validation').each(function() {
+    $('.form-validation').each(function() {
         $(this).validate({
             errorClass : 'validation-fail',
             errorElement : 'p',
@@ -56,10 +56,10 @@ $(function(){
         });
     }
 
-	$.validator.addMethod("cRequired", $.validator.methods.required, "此欄位必須填寫");
-	if( $('.form-required').length ){
-	    $.validator.addClassRules("form-required", { cRequired: true });
-	}
+    $.validator.addMethod("chRequired", $.validator.methods.required, "此項目至少必須設定一項.");
+    if( $('.valid-checkreq').length ){
+        $.validator.addClassRules("valid-checkreq", { chRequired: true });
+    }
     $.validator.addMethod(
         "phoneRegex",
         function(value, element, regexp) {
@@ -67,14 +67,14 @@ $(function(){
             return this.optional(element) || re.test(value);
         },
         "您輸入的電話格式錯誤請重新輸入"
-	);
-	if( $(".valid-phonenum").length ){
-		$(".valid-phonenum").rules("add", { phoneRegex: /^(\(?0\d{1,2}\)?)?\-?\d{3,4}\-?\d{4}([#|\*]?\d+)?$/ });
-	}
-	if( $(".valid-price").length ){
-		$(".valid-price").rules("add", { number: true });
-	}
-	if( $(".valid-confirmpw").length ){
-		$(".valid-confirmpw").rules("add", { equalTo: "#password" });
-	}
+    );
+    if( $(".valid-phonenum").length ){
+        $(".valid-phonenum").rules("add", { phoneRegex: /^(\(?0\d{1,2}\)?)?\-?\d{3,4}\-?\d{4}([#|\*]?\d+)?$/ });
+    }
+    if( $(".valid-price").length ){
+        $(".valid-price").rules("add", { number: true });
+    }
+    if( $(".valid-confirmpw").length ){
+        $(".valid-confirmpw").rules("add", { equalTo: "#password" });
+    }
 });

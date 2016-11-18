@@ -11,12 +11,17 @@ div:has(p.validation-fail) {
         position: absolute;
         background-color: #D9534F;
         color: #FFFFFF;
-        top: 0;
+        top: -28px;
         border-bottom-color: #000000; /* black */
         border-width: 0 5px 5px;
         padding: 3px;
+        min-width: 180px;
+        white-space: nowrap;
+        z-index: 100;
     }
 /**
  *  表單驗證樣式
  */
-.valid-required{ border: 1px solid #B15D54; }
+input[required], textarea[required], .valid-required{
+    border: 1px solid #B15D54;
+}
